@@ -22,7 +22,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed 
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion2
@@ -34,13 +34,13 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget 
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim 
 brew install grep
 brew install openssh
 brew install screen
@@ -84,7 +84,7 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install gs
-brew install imagemagick --with-webp
+brew install imagemagickp
 brew install lua
 brew install lynx
 brew install p7zip
@@ -110,18 +110,21 @@ brew install nss # for firefox
 
 #cask stuff
 brew update                           # Fetch latest version of homebrew and formula.
-brew tap caskroom/cask                # Tap the Caskroom/Cask repository from Github using HTTPS.
+brew tap homebrew/cask                # Tap the Caskroom/Cask repository from Github using HTTPS.
 brew tap homebrew/cask-fontsbrew tap homebrew/cask-fonts
-brew cask install font-fira-code
-brew cask install visual-studio-code  # Install the given cask.
-brew cask install postman
-brew cask install dropbox
-brew cask install rust
-brew cask install stretchly
-brew cask install zettlr
-brew cask install robo-3t
-brew cask install skype
-brew cask install vlc
+brew install font-fira-code
+brew install visual-studio-code  # Install the given cask.
+brew install postman
+brew install dropbox
+brew install rust
+brew install stretchly
+brew install zettlr
+brew install robo-3t
+brew install skype
+brew install vlc
+brew install alacritty
+brew install karabiner-elements
+brew install slack
 
 # Remove outdated versions from the cellar.
 brew cleanup
