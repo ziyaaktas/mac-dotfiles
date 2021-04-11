@@ -107,6 +107,9 @@ brew install go
 brew install kubernetes-cli
 brew install mkcert
 brew install nss # for firefox
+brew install awscli
+brew install terraform
+berw install terragrunt
 
 #cask stuff
 brew update                           # Fetch latest version of homebrew and formula.
