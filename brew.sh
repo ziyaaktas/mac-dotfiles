@@ -109,7 +109,8 @@ brew install mkcert
 brew install nss # for firefox
 brew install awscli
 brew install terraform
-berw install terragrunt
+brew install terragrunt
+brew install nvm
 
 #cask stuff
 brew update                           # Fetch latest version of homebrew and formula.
