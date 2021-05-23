@@ -129,7 +129,7 @@ brew install vlc
 brew install alacritty
 brew install karabiner-elements
 brew install slack
-brew install docker
+brew install --cask docker
 brew install docker-compose
 
 # Remove outdated versions from the cellar.
