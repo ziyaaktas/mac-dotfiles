@@ -99,6 +99,7 @@ brew install zopfli
 brew install kubectl
 brew install minikube
 brew install tmux
+brew install tmuxinator
 brew install mongodb-database-tools
 brew install tig
 
