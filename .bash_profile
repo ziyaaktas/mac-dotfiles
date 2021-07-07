@@ -55,11 +55,14 @@ export NVM_DIR="$HOME/.nvm"
 
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-# start bash with tmux
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
-fi
+# autoload tmux - place at EOF (end-of-file) within ~/.bashrc
+# if shell is interactive, and TMUX var is set...
+[[ $- == *i* ]] && [[ -z "${TMUX}" ]] && { exec tmux && exit; }
+
