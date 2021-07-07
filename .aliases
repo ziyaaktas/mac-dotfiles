@@ -146,3 +146,11 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# aws stuff
+# find aws ubuntu server images in the region
+alias aws-ubuntu-images = 'aws ec2 describe-images \
+    --owners 099720109477 \
+    --filters "Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-????????" "Name=state,Values=available" \
+    --query "reverse(sort_by(Images, &CreationDate))[:1].ImageId" \
+    --output text'
