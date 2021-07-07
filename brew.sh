@@ -102,6 +102,7 @@ brew install tmux
 brew install tmuxinator
 brew install mongodb-database-tools
 brew install tig
+brew install coreutils
 
 # Install developer tools
 brew install go
