@@ -188,3 +188,10 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = zaktas
+	email = ziya.aktas@factset.com
+[credential]
+	helper = cache --timeout=86400
+[git-extras]
+	github-personal-access-token = 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

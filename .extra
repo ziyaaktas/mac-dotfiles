@@ -1,8 +1,11 @@
 # Git credentials
 # Not in the repository, to prevent people from accidentally committing under my name
-GIT_AUTHOR_NAME="Ziya Aktas"
+GIT_AUTHOR_NAME="zaktas"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="aktanaktas@gmail.com"
+GIT_AUTHOR_EMAIL="ziya.aktas@factset.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+
+export NODE_EXTRA_CA_CERTS=~/src/factset/ca-certificates/ca-bundle.crt

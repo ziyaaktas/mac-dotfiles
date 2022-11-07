@@ -113,6 +113,8 @@ brew install awscli
 brew install terraform
 brew install terragrunt
 brew install nvm
+brew install jq
+brew install neovim
 
 #cask stuff
 brew update                           # Fetch latest version of homebrew and formula.
@@ -133,6 +135,9 @@ brew install karabiner-elements
 brew install slack
 brew install --cask docker
 brew install docker-compose
+brew install bbedit
+brew install insomnia
+brew install --cask anaconda
 
 # Remove outdated versions from the cellar.
 brew cleanup
